@@ -31,16 +31,23 @@ Drinks
 Coffee
 Tea
 Unicorn Tears
-    """)
-cafee()
-orders=[]    
-order= input("""***********************************
+
+ ***********************************
 ** What would you like to order? **
 ***********************************
-""")  
-orders.append(order)
-count=orders.count(order)
+ 
+    
+    """)
+cafee()
+orders=[]
+order=""   
+while order != "quit":
+ order= input('>')  
+ if order!='quit':
+  orders.append(order)
+  count=orders.count(order)
+  print (f'**{count} order of {order} added to your meal**')
+ 
 
 
-
-print (f'**{count} order of {order} added to your meal')
+ 
